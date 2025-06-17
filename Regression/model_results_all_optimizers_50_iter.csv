@@ -1,0 +1,127 @@
+model,optimizer,target,best_params,rmse,mae,r2,data_source
+LinearRegression,RandomizedSearchCV,"IC50, mM",{},1.7994895608145876,1.381572208790811,0.15873950874270903,PCA Aggregated
+Ridge,RandomizedSearchCV,"IC50, mM",{'alpha': np.float64(19.498197043239887)},1.648838666693016,1.2980328668818113,0.2937017062450096,PCA Aggregated
+Lasso,RandomizedSearchCV,"IC50, mM",{'alpha': np.float64(0.021584494295802448)},1.6196664182138505,1.2946247005971787,0.3184731260358027,PCA Aggregated
+RandomForestRegressor,RandomizedSearchCV,"IC50, mM","{'max_depth': 10, 'min_samples_split': 5, 'n_estimators': 87}",1.4710920622122885,1.1748218032536843,0.43777321187921225,PCA Aggregated
+XGBRegressor,RandomizedSearchCV,"IC50, mM","{'learning_rate': np.float64(0.02797980510005242), 'max_depth': 6, 'n_estimators': 108, 'subsample': np.float64(0.7969608796062265)}",1.489272026412781,1.1894349236324377,0.42379118988014175,PCA Aggregated
+CatBoostRegressor,RandomizedSearchCV,"IC50, mM","{'depth': 7, 'iterations': 192, 'l2_leaf_reg': np.float64(6.288857969801341), 'learning_rate': np.float64(0.04431972482374337)}",1.4331019474043378,1.1614340475344878,0.46643663544939373,PCA Aggregated
+MLPRegressor,RandomizedSearchCV,"IC50, mM","{'alpha': np.float64(0.0031592644736118973), 'hidden_layer_sizes': (100,), 'learning_rate_init': np.float64(0.0003333283160680771)}",1.5364144206764117,1.180313951961257,0.3867344349170898,PCA Aggregated
+LinearRegression,GridSearchCV,"IC50, mM",{},1.7994895608145876,1.381572208790811,0.15873950874270903,PCA Aggregated
+Ridge,GridSearchCV,"IC50, mM",{'alpha': 10.0},1.6753984878465875,1.3164935254407737,0.27076405339164444,PCA Aggregated
+Lasso,GridSearchCV,"IC50, mM",{'alpha': 0.01},1.6299694860714975,1.2822113214882052,0.30977485182012177,PCA Aggregated
+RandomForestRegressor,GridSearchCV,"IC50, mM","{'max_depth': 10, 'n_estimators': 100}",1.4744502443645873,1.1699078878064775,0.43520339993010737,PCA Aggregated
+XGBRegressor,GridSearchCV,"IC50, mM","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",1.5129001653675533,1.2148156974868531,0.4053623946563011,PCA Aggregated
+CatBoostRegressor,GridSearchCV,"IC50, mM","{'depth': 5, 'iterations': 150, 'learning_rate': 0.1}",1.4967097384048162,1.1885837773472376,0.41802142204012105,PCA Aggregated
+MLPRegressor,GridSearchCV,"IC50, mM","{'alpha': 0.0001, 'hidden_layer_sizes': (100,)}",1.6605582913781725,1.2697654140751444,0.2836255615042226,PCA Aggregated
+LinearRegression,Optuna,"IC50, mM",{},1.7994895608145876,1.381572208790811,0.15873950874270903,PCA Aggregated
+Ridge,Optuna,"IC50, mM",{'alpha': 19.937205695492327},1.6479693708990872,1.2973698229813606,0.2944462548749105,PCA Aggregated
+Lasso,Optuna,"IC50, mM",{'alpha': 0.016215180352464772},1.6280550429225311,1.291805966029378,0.31139527577205217,PCA Aggregated
+RandomForestRegressor,Optuna,"IC50, mM","{'n_estimators': 152, 'max_depth': 10, 'min_samples_split': 8}",1.4739280121017426,1.1713767610797146,0.4356034171879277,PCA Aggregated
+XGBRegressor,Optuna,"IC50, mM","{'n_estimators': 184, 'learning_rate': 0.02173193534446381, 'max_depth': 5, 'subsample': 0.783801367096233}",1.4650426666217606,1.1739497064353261,0.44238766029591514,PCA Aggregated
+CatBoostRegressor,Optuna,"IC50, mM","{'iterations': 151, 'learning_rate': 0.04505222445615501, 'depth': 8, 'l2_leaf_reg': 1.875691977725676}",1.4400073734019354,1.1541075103859761,0.46128227890711815,PCA Aggregated
+MLPRegressor,Optuna,"IC50, mM","{'hidden_layer_sizes': (50, 50), 'alpha': 1.1093373486981732e-05, 'learning_rate_init': 0.005227807467126531}",1.7499039123768112,1.312932371220348,0.20446327263212027,PCA Aggregated
+LinearRegression,RandomizedSearchCV,"IC50, mM",{},1.7832317435147327,1.3782790008897856,0.1738718837436375,Manual Aggregated
+Ridge,RandomizedSearchCV,"IC50, mM",{'alpha': np.float64(19.498197043239887)},1.641597317880506,1.2896405155306785,0.29989190714308145,Manual Aggregated
+Lasso,RandomizedSearchCV,"IC50, mM",{'alpha': np.float64(0.021584494295802448)},1.6215485617488765,1.2965361304638114,0.31688826054944685,Manual Aggregated
+RandomForestRegressor,RandomizedSearchCV,"IC50, mM","{'max_depth': None, 'min_samples_split': 7, 'n_estimators': 102}",1.4526638389908582,1.1522006536998455,0.45177090299424083,Manual Aggregated
+XGBRegressor,RandomizedSearchCV,"IC50, mM","{'learning_rate': np.float64(0.05513174647251545), 'max_depth': 3, 'n_estimators': 130, 'subsample': np.float64(0.7800343042825855)}",1.451556543941689,1.1815920505522743,0.4526063612547965,Manual Aggregated
+CatBoostRegressor,RandomizedSearchCV,"IC50, mM","{'depth': 6, 'iterations': 108, 'l2_leaf_reg': np.float64(3.262420524145287), 'learning_rate': np.float64(0.0878185932615049)}",1.449740650421765,1.174670936954657,0.45397508066777204,Manual Aggregated
+MLPRegressor,RandomizedSearchCV,"IC50, mM","{'alpha': np.float64(0.004141986740582306), 'hidden_layer_sizes': (50,), 'learning_rate_init': np.float64(0.00017983126110107097)}",1.5618381606602987,1.2156827927507414,0.36627054982116936,Manual Aggregated
+LinearRegression,GridSearchCV,"IC50, mM",{},1.7832317435147327,1.3782790008897856,0.1738718837436375,Manual Aggregated
+Ridge,GridSearchCV,"IC50, mM",{'alpha': 10.0},1.663463362144476,1.3054217620321344,0.2811168403583658,Manual Aggregated
+Lasso,GridSearchCV,"IC50, mM",{'alpha': 0.01},1.6301251093445535,1.2841939190496614,0.30964304539624077,Manual Aggregated
+RandomForestRegressor,GridSearchCV,"IC50, mM","{'max_depth': 10, 'n_estimators': 150}",1.4622560563463562,1.1583545397210775,0.4445068757271152,Manual Aggregated
+XGBRegressor,GridSearchCV,"IC50, mM","{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 150}",1.4985367110367833,1.2237028619303962,0.4165997597826142,Manual Aggregated
+CatBoostRegressor,GridSearchCV,"IC50, mM","{'depth': 5, 'iterations': 150, 'learning_rate': 0.1}",1.468222987359819,1.1931002610273747,0.4399640982179399,Manual Aggregated
+MLPRegressor,GridSearchCV,"IC50, mM","{'alpha': 0.001, 'hidden_layer_sizes': (50,)}",1.5072593876300242,1.1765772893260547,0.4097882855630277,Manual Aggregated
+LinearRegression,Optuna,"IC50, mM",{},1.7832317435147327,1.3782790008897856,0.1738718837436375,Manual Aggregated
+Ridge,Optuna,"IC50, mM",{'alpha': 19.937205695492327},1.6408697822903147,1.2891304253900477,0.3005123280945482,Manual Aggregated
+Lasso,Optuna,"IC50, mM",{'alpha': 0.026879652168697282},1.6176283886882044,1.300780534791966,0.3201871802422519,Manual Aggregated
+RandomForestRegressor,Optuna,"IC50, mM","{'n_estimators': 192, 'max_depth': 10, 'min_samples_split': 7}",1.4706978722775956,1.1688682916917867,0.43807447711430514,Manual Aggregated
+XGBRegressor,Optuna,"IC50, mM","{'n_estimators': 175, 'learning_rate': 0.02640734341064126, 'max_depth': 4, 'subsample': 0.857836649221471}",1.4630436030253051,1.1863962327966424,0.4439083559642615,Manual Aggregated
+CatBoostRegressor,Optuna,"IC50, mM","{'iterations': 102, 'learning_rate': 0.05983861432070429, 'depth': 7, 'l2_leaf_reg': 1.0672299298843655}",1.4188257207809436,1.1518421261025622,0.4770141533780238,Manual Aggregated
+MLPRegressor,Optuna,"IC50, mM","{'hidden_layer_sizes': (100,), 'alpha': 0.00040445740594049524, 'learning_rate_init': 0.009841513366747656}",1.636112329325381,1.2713223064009,0.3045625647901703,Manual Aggregated
+LinearRegression,RandomizedSearchCV,"CC50, mM",{},1.3277853912509139,1.0052021708797552,0.22481312015831634,PCA Aggregated
+Ridge,RandomizedSearchCV,"CC50, mM",{'alpha': np.float64(19.498197043239887)},1.2451451509765228,0.9694639777991256,0.31830422130896374,PCA Aggregated
+Lasso,RandomizedSearchCV,"CC50, mM",{'alpha': np.float64(0.021584494295802448)},1.1617923575550049,0.9295429804458611,0.4065178353762646,PCA Aggregated
+RandomForestRegressor,RandomizedSearchCV,"CC50, mM","{'max_depth': 10, 'min_samples_split': 5, 'n_estimators': 70}",1.1260103924192217,0.7998438110513502,0.4425121084667545,PCA Aggregated
+XGBRegressor,RandomizedSearchCV,"CC50, mM","{'learning_rate': np.float64(0.1182998158400237), 'max_depth': 4, 'n_estimators': 70, 'subsample': np.float64(0.8852444528883149)}",1.1535865726592498,0.8208001447718847,0.4148718041323419,PCA Aggregated
+CatBoostRegressor,RandomizedSearchCV,"CC50, mM","{'depth': 7, 'iterations': 191, 'l2_leaf_reg': np.float64(4.456569174550735), 'learning_rate': np.float64(0.0884099244072991)}",1.120222194929834,0.7919016418774847,0.4482288519515386,PCA Aggregated
+MLPRegressor,RandomizedSearchCV,"CC50, mM","{'alpha': np.float64(0.0011153061236738471), 'hidden_layer_sizes': (50,), 'learning_rate_init': np.float64(0.00048489954914396495)}",1.297267725736795,0.9124345831747752,0.26003723154014846,PCA Aggregated
+LinearRegression,GridSearchCV,"CC50, mM",{},1.3277853912509139,1.0052021708797552,0.22481312015831634,PCA Aggregated
+Ridge,GridSearchCV,"CC50, mM",{'alpha': 10.0},1.267124555915579,0.9779728868025896,0.29402510735845333,PCA Aggregated
+Lasso,GridSearchCV,"CC50, mM",{'alpha': 0.01},1.1859495857189162,0.9386834045344054,0.38158061165539137,PCA Aggregated
+RandomForestRegressor,GridSearchCV,"CC50, mM","{'max_depth': 10, 'n_estimators': 150}",1.133215969381819,0.8055255092973033,0.43535431521960344,PCA Aggregated
+XGBRegressor,GridSearchCV,"CC50, mM","{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100}",1.1653176000518164,0.8317218420348796,0.40291074899447543,PCA Aggregated
+CatBoostRegressor,GridSearchCV,"CC50, mM","{'depth': 5, 'iterations': 150, 'learning_rate': 0.1}",1.1280949895171666,0.8244920332795537,0.44044602916833453,PCA Aggregated
+MLPRegressor,GridSearchCV,"CC50, mM","{'alpha': 0.001, 'hidden_layer_sizes': (100,)}",1.223972773757266,0.8606082490298594,0.341290152206016,PCA Aggregated
+LinearRegression,Optuna,"CC50, mM",{},1.3277853912509139,1.0052021708797552,0.22481312015831634,PCA Aggregated
+Ridge,Optuna,"CC50, mM",{'alpha': 19.937205695492327},1.2443709565494878,0.9692189634333119,0.31915167431157276,PCA Aggregated
+Lasso,Optuna,"CC50, mM",{'alpha': 0.01256583486720503},1.1752996229678212,0.9346943717342443,0.3926376942988995,PCA Aggregated
+RandomForestRegressor,Optuna,"CC50, mM","{'n_estimators': 195, 'max_depth': 15, 'min_samples_split': 6}",1.134632519072147,0.8146438870920981,0.43394178908609404,PCA Aggregated
+XGBRegressor,Optuna,"CC50, mM","{'n_estimators': 159, 'learning_rate': 0.022390596855090487, 'max_depth': 6, 'subsample': 0.7131976549941411}",1.1319202461556126,0.8162458636877945,0.43664481284237144,PCA Aggregated
+CatBoostRegressor,Optuna,"CC50, mM","{'iterations': 192, 'learning_rate': 0.0360309842192462, 'depth': 8, 'l2_leaf_reg': 0.8306050731972209}",1.1076699140634203,0.8023052444399427,0.46052495360983137,PCA Aggregated
+MLPRegressor,Optuna,"CC50, mM","{'hidden_layer_sizes': (100, 50), 'alpha': 0.00010256237020206648, 'learning_rate_init': 0.00012407156800799915}",1.1795986847543591,0.8581803867830434,0.388186295688112,PCA Aggregated
+LinearRegression,RandomizedSearchCV,"CC50, mM",{},1.3126274550051868,0.9923148469136902,0.24241108941120526,Manual Aggregated
+Ridge,RandomizedSearchCV,"CC50, mM",{'alpha': np.float64(19.498197043239887)},1.2432546480265503,0.9652747129153251,0.320372686221859,Manual Aggregated
+Lasso,RandomizedSearchCV,"CC50, mM",{'alpha': np.float64(0.021584494295802448)},1.183221782658367,0.9409963592849744,0.3844221932379992,Manual Aggregated
+RandomForestRegressor,RandomizedSearchCV,"CC50, mM","{'max_depth': None, 'min_samples_split': 4, 'n_estimators': 186}",1.1361400888803486,0.8158252249260904,0.4324365630577611,Manual Aggregated
+XGBRegressor,RandomizedSearchCV,"CC50, mM","{'learning_rate': np.float64(0.09979877262955549), 'max_depth': 4, 'n_estimators': 124, 'subsample': np.float64(0.8377746675897602)}",1.1755531157042998,0.8372861809237566,0.39237566998880646,Manual Aggregated
+CatBoostRegressor,RandomizedSearchCV,"CC50, mM","{'depth': 6, 'iterations': 160, 'l2_leaf_reg': np.float64(5.782844631778207), 'learning_rate': np.float64(0.10149949866739313)}",1.1533935255415306,0.8415943142024828,0.41506762447726675,Manual Aggregated
+MLPRegressor,RandomizedSearchCV,"CC50, mM","{'alpha': np.float64(0.0006544541040591566), 'hidden_layer_sizes': (100, 50), 'learning_rate_init': np.float64(0.0006394571349665223)}",1.2281255974304033,0.8675013354793784,0.3368126890393459,Manual Aggregated
+LinearRegression,GridSearchCV,"CC50, mM",{},1.3126274550051868,0.9923148469136902,0.24241108941120526,Manual Aggregated
+Ridge,GridSearchCV,"CC50, mM",{'alpha': 10.0},1.263298530819674,0.9710758315682323,0.2982819892143508,Manual Aggregated
+Lasso,GridSearchCV,"CC50, mM",{'alpha': 0.01},1.2023942515178898,0.9431715335713525,0.36431139876822305,Manual Aggregated
+RandomForestRegressor,GridSearchCV,"CC50, mM","{'max_depth': 10, 'n_estimators': 150}",1.144082626969644,0.82774890380776,0.42447337053692136,Manual Aggregated
+XGBRegressor,GridSearchCV,"CC50, mM","{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 150}",1.2112678347138468,0.8610598508930887,0.35489410462583937,Manual Aggregated
+CatBoostRegressor,GridSearchCV,"CC50, mM","{'depth': 5, 'iterations': 150, 'learning_rate': 0.1}",1.1078565880044586,0.8076509045878983,0.460343104454894,Manual Aggregated
+MLPRegressor,GridSearchCV,"CC50, mM","{'alpha': 0.001, 'hidden_layer_sizes': (100,)}",1.2821817380545202,0.8974647970306587,0.2771472868671734,Manual Aggregated
+LinearRegression,Optuna,"CC50, mM",{},1.3126274550051868,0.9923148469136902,0.24241108941120526,Manual Aggregated
+Ridge,Optuna,"CC50, mM",{'alpha': 19.937205695492327},1.242546470727619,0.9650325911999057,0.3211467184107888,Manual Aggregated
+Lasso,Optuna,"CC50, mM",{'alpha': 0.013777722745019604},1.1918989061023038,0.939129666355882,0.37536044274686264,Manual Aggregated
+RandomForestRegressor,Optuna,"CC50, mM","{'n_estimators': 154, 'max_depth': None, 'min_samples_split': 4}",1.1362799753585628,0.8128609152966095,0.43229679272692245,Manual Aggregated
+XGBRegressor,Optuna,"CC50, mM","{'n_estimators': 191, 'learning_rate': 0.02822884239883794, 'max_depth': 5, 'subsample': 0.7002332870461145}",1.1568541949041378,0.8353152775280498,0.41155226857917604,Manual Aggregated
+CatBoostRegressor,Optuna,"CC50, mM","{'iterations': 186, 'learning_rate': 0.08415515895857882, 'depth': 6, 'l2_leaf_reg': 0.6481456626113008}",1.130501810310343,0.8082392909738236,0.43805583542781956,Manual Aggregated
+MLPRegressor,Optuna,"CC50, mM","{'hidden_layer_sizes': (100, 50), 'alpha': 0.0005078490314697306, 'learning_rate_init': 0.0007414864764852713}",1.2086512216089702,0.8562118321784774,0.35767824413367877,Manual Aggregated
+LinearRegression,RandomizedSearchCV,SI,{},1.4950317278831298,1.1032137972191693,0.07639954262856574,PCA Aggregated
+Ridge,RandomizedSearchCV,SI,{'alpha': np.float64(19.498197043239887)},1.4155932754507912,1.0391080883038357,0.17194286763725442,PCA Aggregated
+Lasso,RandomizedSearchCV,SI,{'alpha': np.float64(0.035388521115218396)},1.3745010334084617,1.0174521371941774,0.21931926593331463,PCA Aggregated
+RandomForestRegressor,RandomizedSearchCV,SI,"{'max_depth': 10, 'min_samples_split': 7, 'n_estimators': 100}",1.2930959648239595,0.9533022805247816,0.3090528443499311,PCA Aggregated
+XGBRegressor,RandomizedSearchCV,SI,"{'learning_rate': np.float64(0.02797980510005242), 'max_depth': 6, 'n_estimators': 108, 'subsample': np.float64(0.7969608796062265)}",1.2780270623175303,0.9292211193725095,0.3250627142009824,PCA Aggregated
+CatBoostRegressor,RandomizedSearchCV,SI,"{'depth': 6, 'iterations': 178, 'l2_leaf_reg': np.float64(2.595546137793592), 'learning_rate': np.float64(0.07406616829393844)}",1.2954186706150161,0.953540522961133,0.3065684064373413,PCA Aggregated
+MLPRegressor,RandomizedSearchCV,SI,"{'alpha': np.float64(0.005016154429033941), 'hidden_layer_sizes': (50,), 'learning_rate_init': np.float64(0.0003322520635999886)}",1.392120353863331,1.0134811833599329,0.1991763562811365,PCA Aggregated
+LinearRegression,GridSearchCV,SI,{},1.4950317278831298,1.1032137972191693,0.07639954262856574,PCA Aggregated
+Ridge,GridSearchCV,SI,{'alpha': 10.0},1.4303936154381023,1.0504878436246334,0.15453731136452575,PCA Aggregated
+Lasso,GridSearchCV,SI,{'alpha': 0.01},1.379984385119902,1.0212259388018932,0.21307804004508402,PCA Aggregated
+RandomForestRegressor,GridSearchCV,SI,"{'max_depth': 10, 'n_estimators': 100}",1.2805563399692144,0.9416879055955643,0.3223886033557303,PCA Aggregated
+XGBRegressor,GridSearchCV,SI,"{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100}",1.2934244029550732,0.9431197472225411,0.30870180743002473,PCA Aggregated
+CatBoostRegressor,GridSearchCV,SI,"{'depth': 5, 'iterations': 150, 'learning_rate': 0.05}",1.2889701189647156,0.9590776738700527,0.31345498254723525,PCA Aggregated
+MLPRegressor,GridSearchCV,SI,"{'alpha': 0.0001, 'hidden_layer_sizes': (50,)}",1.4438651411752164,1.0544560355434416,0.13853709082858057,PCA Aggregated
+LinearRegression,Optuna,SI,{},1.4950317278831298,1.1032137972191693,0.07639954262856574,PCA Aggregated
+Ridge,Optuna,SI,{'alpha': 19.937205695492327},1.4150863992960896,1.038825051912504,0.17253576007068183,PCA Aggregated
+Lasso,Optuna,SI,{'alpha': 0.019400283885693707},1.3684768565146403,1.0128737764711988,0.2261474204970545,PCA Aggregated
+RandomForestRegressor,Optuna,SI,"{'n_estimators': 69, 'max_depth': 10, 'min_samples_split': 5}",1.3009963227687042,0.9638118100138617,0.300584168471846,PCA Aggregated
+XGBRegressor,Optuna,SI,"{'n_estimators': 154, 'learning_rate': 0.03263276200396876, 'max_depth': 6, 'subsample': 0.7005054145185794}",1.301534833610173,0.9384425638281739,0.30000504161073105,PCA Aggregated
+CatBoostRegressor,Optuna,SI,"{'iterations': 54, 'learning_rate': 0.11681446704286443, 'depth': 8, 'l2_leaf_reg': 1.0808687767913154}",1.2816624224946656,0.94299760172622,0.3212175220220508,PCA Aggregated
+MLPRegressor,Optuna,SI,"{'hidden_layer_sizes': (100,), 'alpha': 0.00012231555739164763, 'learning_rate_init': 0.00013868058580608677}",1.3884249690328458,1.0332556784915479,0.20342228765613135,PCA Aggregated
+LinearRegression,RandomizedSearchCV,SI,{},1.5127114246552065,1.1060819858441167,0.05442606078375456,Manual Aggregated
+Ridge,RandomizedSearchCV,SI,{'alpha': np.float64(19.498197043239887)},1.4199914715708322,1.0416730216915098,0.16678938825289913,Manual Aggregated
+Lasso,RandomizedSearchCV,SI,{'alpha': np.float64(0.035388521115218396)},1.374508457030011,1.017461099051035,0.2193108330637421,Manual Aggregated
+RandomForestRegressor,RandomizedSearchCV,SI,"{'max_depth': 10, 'min_samples_split': 4, 'n_estimators': 84}",1.2917077902639271,0.9544400269737588,0.3105355501195308,Manual Aggregated
+XGBRegressor,RandomizedSearchCV,SI,"{'learning_rate': np.float64(0.02797980510005242), 'max_depth': 6, 'n_estimators': 108, 'subsample': np.float64(0.7969608796062265)}",1.2730322596913013,0.9378411714168304,0.330328003151626,Manual Aggregated
+CatBoostRegressor,RandomizedSearchCV,SI,"{'depth': 7, 'iterations': 192, 'l2_leaf_reg': np.float64(6.288857969801341), 'learning_rate': np.float64(0.04431972482374337)}",1.2703382983887204,0.9429492543327973,0.33315929287774837,Manual Aggregated
+MLPRegressor,RandomizedSearchCV,SI,"{'alpha': np.float64(0.0011153061236738471), 'hidden_layer_sizes': (50,), 'learning_rate_init': np.float64(0.00048489954914396495)}",1.3863848400660064,1.0120139772444552,0.20576152432817685,Manual Aggregated
+LinearRegression,GridSearchCV,SI,{},1.5127114246552065,1.1060819858441167,0.05442606078375456,Manual Aggregated
+Ridge,GridSearchCV,SI,{'alpha': 10.0},1.4371557866343405,1.053312025417945,0.14652458354667453,Manual Aggregated
+Lasso,GridSearchCV,SI,{'alpha': 0.01},1.3808953569788107,1.0221058733912487,0.21203875238246372,Manual Aggregated
+RandomForestRegressor,GridSearchCV,SI,"{'max_depth': 10, 'n_estimators': 100}",1.281115052787276,0.9427507563410172,0.32179718421781867,Manual Aggregated
+XGBRegressor,GridSearchCV,SI,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 150}",1.2961581539547757,0.9632328773116213,0.305776496483258,Manual Aggregated
+CatBoostRegressor,GridSearchCV,SI,"{'depth': 5, 'iterations': 150, 'learning_rate': 0.1}",1.3095147933822773,0.9646984624853394,0.29139512096454456,Manual Aggregated
+MLPRegressor,GridSearchCV,SI,"{'alpha': 0.0001, 'hidden_layer_sizes': (100,)}",1.5018821185449887,1.1102576775787731,0.06791608455788523,Manual Aggregated
+LinearRegression,Optuna,SI,{},1.5127114246552065,1.1060819858441167,0.05442606078375456,Manual Aggregated
+Ridge,Optuna,SI,{'alpha': 19.937205695492327},1.4194153876411937,1.0412434261584709,0.1674653104486452,Manual Aggregated
+Lasso,Optuna,SI,{'alpha': 0.019282181792769644},1.3697807348619528,1.014163843508679,0.22467207174351989,Manual Aggregated
+RandomForestRegressor,Optuna,SI,"{'n_estimators': 65, 'max_depth': 10, 'min_samples_split': 7}",1.2993822303087368,0.9627010945463474,0.3023185646372223,Manual Aggregated
+XGBRegressor,Optuna,SI,"{'n_estimators': 193, 'learning_rate': 0.010153270224385324, 'max_depth': 7, 'subsample': 0.7017325988207375}",1.2948697499591837,0.9535696301704171,0.3071559512794598,Manual Aggregated
+CatBoostRegressor,Optuna,SI,"{'iterations': 107, 'learning_rate': 0.1470475914528585, 'depth': 6, 'l2_leaf_reg': 0.14273755610019978}",1.3368491871604766,0.9468328560732667,0.2615039902502698,Manual Aggregated
+MLPRegressor,Optuna,SI,"{'hidden_layer_sizes': (100, 50), 'alpha': 0.0016438829390598877, 'learning_rate_init': 0.00010363582104535062}",1.3184983529725989,0.9625632744341686,0.281639401421217,Manual Aggregated
